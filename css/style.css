@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     background-color: black;
 }
 
@@ -14,6 +14,8 @@
 header{
     height: 50px;
     text-align: right;
+    position:fixed;
+    position: relative;
 }
 
 header a {
@@ -35,14 +37,15 @@ header a:hover{
 /* inizio main */
 
 main {
-    height: 1000%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
+    height: calc(100vh - 100px);    
 }
 
 .container {
-    height: 100%;
+
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -67,7 +70,58 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(10, 10, 10, 0.041);
     color: white;
+
 }
+
+.box span+span, i{
+    padding: 2px;
+    font-size: 14px;
+    background-color: rgba(1, 1, 1, 0.4);
+
+}
+
 /* fine main */
+/* inizio footer */
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer, footer *{
+    background-color: rgb(34, 34, 34);
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.left,
+.footer-main,
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right button {
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.699);
+    color: red;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+.green{
+    color: lime;
+}
+
+/* fine footer */
