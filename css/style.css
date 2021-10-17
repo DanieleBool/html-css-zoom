@@ -16,17 +16,21 @@ header{
     text-align: right;
     position:fixed;
     position: relative;
+    padding: 5px 10px;
 }
 
-header a {
+header a{
     padding: 5px;
     background-image: linear-gradient(180deg, rgb(87, 86, 86), rgb(37, 37, 37));
     color: white;
-    border: 0;
     border-radius: 5px;
-    margin: 10px 0 0 10px;
     text-decoration: none;
     display: inline-block;
+    font-size: 14px;
+}
+
+header i{
+    background-image: linear-gradient(180deg, rgb(87, 86, 86), rgb(37, 37, 37));
 }
 
 header a:hover{
@@ -46,7 +50,7 @@ main {
 
 .container {
 
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -70,16 +74,22 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    color: white;
-
+    background-color: rgba(1, 1, 1, 0.5);
 }
 
-.box span+span, i{
+.name *{
+    background-color: rgba(1, 1, 1, 0.5);
     padding: 2px;
-    font-size: 14px;
-    background-color: rgba(1, 1, 1, 0.4);
-
+    font-size: 13px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.9);    
 }
+
+.name i{
+    color: rgba(240, 23, 23, 1);
+}
+
+
 
 /* fine main */
 /* inizio footer */
@@ -88,7 +98,7 @@ footer{
     height: 50px;
     display: flex;
     justify-content: space-between;
-
+    text-align: center;
 }
 
 footer, footer *{
@@ -101,8 +111,18 @@ footer, footer *{
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 15px;
+}
+
+.icon i{
+    margin-bottom: 3px;
+}
+
+.icon:hover *{
+    filter: brightness(170%);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .left,
@@ -110,18 +130,24 @@ footer, footer *{
 .right {
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .right button {
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.699);
-    color: red;
-    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: rgba(255, 24, 24, 0.87);
+    font-weight: bold;
     padding: 0 10px;
+    border: none;
 }
 
 .green{
     color: lime;
+}
+
+.icon i{
+    font-size: 20px;
 }
 
 /* fine footer */
