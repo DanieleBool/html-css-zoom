@@ -35,20 +35,26 @@ header a:hover{
 /* inizio main */
 
 main {
-    height: 90%;
-
+    height: 1000%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     height: 100%;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box{
-    width: calc(100% / 5);
-    height: calc(100% / 5);
+    width: calc(100% / 5 - 24px);
+    height: calc(100% / 5 - 24px);
+    margin: 3px;
+    color: white;
+    position: relative;
 }
 
 .box img {
@@ -57,4 +63,11 @@ main {
     object-fit: cover;
 }
 
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.041);
+    color: white;
+}
 /* fine main */
